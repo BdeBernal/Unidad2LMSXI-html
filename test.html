@@ -7,12 +7,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <style>
+        blockquote{
+            background-color: darkolivegreen;
+            color: rgb(250, 203, 146);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: 700;
+            padding: 1em;
+            border-width: 1em;
+            border-color: darkslategray;
+            border-style: groove;
+        }
+
+        p{
+            background-color: dodgerblue;
+            color: brown;
+            padding: 10px;
+            border: 10px solid brown;
+            border-radius: 20%;
+        }
+
+        video{
+            border-radius: 50%;
+        }
+
+        th{
+            background-color: #FED435;
+            color: rgba(0, 128, 255, 0.767);
+        }
+
+        td{
+            background: rgb(255, 175, 71);
+            color: rgba(37, 92, 0, 0.856);
+            text-align: center;
+        }
+    </style>
+
 </head>
 
 <body>
     <p>This is one paragraph</p>
 
     <video src="./videos/Teletubbies son flamenco.mp4" controls width="350"></video>
+
+    <blockquote>
+        This is a blockquote Magnum
+    </blockquote>
+
+    <table border="1">
+        <caption>Students</caption>
+        <thead>
+            <tr>
+
+                <th>Name</th>
+                <th>Surname1</th>
+                <th>Surname2</th>
+                <th>Nacionality</th>
+                <th>Age</th>
+                <th>DNI</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+
+                <td rowspan="2">Manuel</td>
+                <td>Gonzalez</td>
+                <td rowspan="2">Alvarez</td>
+                <td rowspan="3">Spanish</td>
+                <td>32</td>
+                <td>54325421Q</td>
+
+            </tr>
+            <tr>
+                <td>Pinto</td>
+                <td>20</td>
+                <td>43323232L</td>
+
+            </tr>
+            <tr>
+
+                <td>Adrián</td>
+                <td>Pouso</td>
+                <td>Pouso</td>
+                <td>17</td>
+                <td>73955350P</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+
+            <tr>
+                <th>Cantidad</th>
+                <td colspan="5">3</td>
+            </tr>
+
+        </tfoot>
+    </table>
+
+    <p>This is another paragraph</p>
 
     <a href="./index.html">Web index</a>
 </body>

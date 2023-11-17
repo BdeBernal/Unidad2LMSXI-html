@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    
+    <form action="process.php" method="get">
+        
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="name">
+
+        <br>
+
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pwd" placeholder="password">
+
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <hr>
+
+    <form action="submit.php" method="POST">
+
+        <fieldset>
+
+            <legend>
+                Favourite Color
+            </legend>
+
+            <input type="radio" name="color" id="red" value="red"> <!--Para que solo se pueda escoger una opcion hay que poner el mismo name-->
+            <label for="red">Red</label>
+
+            <input type="radio" name="color" id="blue" value="blue">
+            <label for="red">Blue</label>
+
+            <input type="radio" name="color" id="green" value="green">
+            <label for="red">Green</label>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend style = "background-color: crimson; color: blanchedalmond">Comunnication ways</legend>
+
+            <input type="checkbox" name="email" id="email">
+            <label for="email">E-mail</label>
+            <input type="checkbox" name="mail" id="mail">
+            <label for="mail">Mail</label>
+            <input type="checkbox" name="phone" id="phone">
+            <label for="phone">Phone</label>
+
+        </fieldset>
+        <input type="submit" value="Submit">
+
+        <hr>
+
+        <h2 style = "background-color: blueviolet; color: blanchedalmond">Nationality</h2>
+        
+        <label for="nationality">Select Nationality:</label>
+
+        <select name="nationality" id="nationality">
+            <option value="spanish">Spanish</option>
+            <option value="french">French</option>
+            <option value="british">British</option>
+            <option value="russian">Russian</option>
+        </select>
+        
+        <input type="submit" value="Submit">  
+
+        <hr>
+        
+        <label for="comment">Put your comment:</label>
+        <br>
+        <textarea name="comment" id="comment" cols="50" rows="5">
+
+        </textarea>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+*{
+
+}
+
+h1{
+    background-color: olive;
+    color: bisque;
+    font-family: 'Edu TAS Beginner', cursive;
+    padding: 1.5em;
+    margin: 0;
+}
+
+img{
+    border-radius: 100%;
+}
+
+p{
+    background-color: #AE91BF;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+#special{
+    background-color: #9DAD4B;
+}
+
+#other{
+    background-color: #7F509D;
+}
+
+.ordered{
+    background-color: darkslateblue;
+}
+
+a:link {
+    color: rgb(32, 123, 76);
+}
+
+a:visited {
+    color: chocolate;
+}
+
+a:hover {
+    color: rgb(220, 231, 57);
+}
+
+a:active {
+    color: pink;
+}
+
+h5,h6 {
+    background-color: goldenrod;
+}
+
+ol li{
+    background-color: #e1a5e5;
+}
+
+p>em{
+    background-color: crimson;
+}

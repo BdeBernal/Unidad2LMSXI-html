@@ -2,6 +2,11 @@
 <html>
     <head>
         <title>My first Web Page</title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -9,6 +14,7 @@
         <h1>Heading H1</h1>
         <h2>Heading H2</h2>
         <a href="#bottom">Go to Bottom</a>
+        <p>This is <em>another</em> paragraph</p>
         <h3>Heading H3</h3>
         <h4>Heading H4</h4>
         <h5>Heading H5</h5>
@@ -24,27 +30,105 @@
 
         <!--Unordered List-->
         <ul>
-            <li>Pan</li>
-            <li>Destornillador</li>
+            <li id="other">Pan</li>
+            <li id="special">Destornillador</li>
             <li>Lechuga</li>
         </ul>
 
+        <code>
+            public class Hello{
+                public static void main(String[] args) {
+                    System.out.println("Hello World");
+                }
+            }
+        </code>
+
+        <cite>Feliz Harwuleen</cite>
+
+        <blockquote>This is a blockquote</blockquote>
+
+        <pre>
+            Running is fine
+                Sleeping is fine too
+        </pre>
+
         <!--Ordered List-->
         <ol>
-            <li>Respirar</li>
+            <li class="ordered">Respirar</li>
             <li>Comer</li>
+            <p>Paragraph after comer
+                <ol>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ol>
+            </p>
             <li>Dormir</li>
         </ol>
 
         <img src="./images/miSabana.jpg" alt="Sábanas" width="400">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue cursus risus et posuere. Nam placerat lectus eu vehicula gravida. 
-            In mattis sem quis ex dapibus, id varius lorem sodales. In ac felis tortor. Nullam interdum massa sed lectus hendrerit dignissim. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, sunt pariatur?</p>
+
+        <table border="1">
+            <caption class="ordered">Students</caption>
+            <thead>
+                <tr>
+
+                    <th>Name</th>
+                    <th>Surname1</th>
+                    <th class="ordered">Surname2</th>
+                    <th>Nacionality</th>
+                    <th>Age</th>
+                    <th>DNI</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+
+                    <td rowspan="2">Manuel</td>
+                    <td>Gonzalez</td>
+                    <td rowspan="2">Alvarez</td>
+                    <td rowspan="3">Spanish</td>
+                    <td>32</td>
+                    <td>54325421Q</td>
+
+                </tr>
+                <tr>
+                    <td>Pinto</td>
+                    <td>20</td>
+                    <td>43323232L</td>
+
+                </tr>
+                <tr>
+
+                    <td>Adrián</td>
+                    <td>Pouso</td>
+                    <td>Pouso</td>
+                    <td>17</td>
+                    <td>73955350P</td>
+                    
+                </tr>
+            </tbody>
+            <tfoot>
+
+                <tr>
+                    <th>Cantidad</th>
+                    <td colspan="5">3</td>
+                </tr>
+
+            </tfoot>
+        </table>
+
+        <img src="https://picsum.photos/id/598/600/400" alt="">
 
             <!--Direccionamiento absoluto porque está el enlace grande-->
         <a href="https://mestre.iessanclemente.net/my/" target="_blank">URL</a>
-            <!--Direccionamiento local  porque -->
+            <!--Direccionamiento local  porque está en nuestros archivos-->
         <a href="./test.html"s>Web test</a>
+        <a href="./forms.html">Forms</a>
 
         <a name="bottom">Bottom</a>
     </body>
